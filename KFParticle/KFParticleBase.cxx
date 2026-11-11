@@ -3024,7 +3024,7 @@ float KFParticleBase::GetDeviationFromParticle( const KFParticleBase &p ) const
   for(int iC=0; iC<6; iC++)
     mC1[iC] += V0Tmp[iC] + mC2[iC] + V1Tmp[iC];
   
-  InvertCholetsky3(mC);
+  InvertCholetsky3(mC1);
 
   float d[3]={ mP2[0]-mP1[0], mP2[1]-mP1[1], mP2[2]-mP1[2]};
   
